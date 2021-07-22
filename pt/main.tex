@@ -1,0 +1,55 @@
+\documentclass[a4paper, twoside, 11pt]{article}
+\PassOptionsToPackage{table}{xcolor}
+
+% ==> Configs: packages, paths, captions, ... <== %
+\input{configs/configs.tex}
+
+\begin{document}
+\thispagestyle{empty}
+\def\fullline#1{\endgraf\noindent\kern\dimexpr-\paperwidth/2+\textwidth/2\rlap{\hbox to\paperwidth{#1\hss}}\endgraf}
+\fullline{%
+    $
+        \rlap{$
+            \vcenter{
+                \hbox{\textcolor{dark}{\vrule height 16ex width .7\textwidth}}
+            }$%
+        }
+        \hskip\dimexpr\paperwidth/2-\textwidth/2
+        \vcenter{
+            \baselineskip=20pt
+            \color{white}
+            \hbox{\fontspec{Poppins-Bold.ttf}[Path=fonts/poppins/]\Huge\MakeUppercase{Daniel Sousa}}
+            \hbox{\fontspec{Poppins-Light.ttf}[Path=fonts/poppins/]Front-end Developer}
+        }%
+        \kern8em
+        \vcenter{%
+            \baselineskip=20pt
+            \hbox{\includegraphics[width=14pt,align=c]{icons/phone.png} \hspace{2pt} \href{tel:+351918139471}{+351 918 139 471}}
+            \hbox{\includegraphics[width=14pt,align=c]{icons/email.png} \hspace{2pt} \href{mailto:jdaniel.asousa@gmail.com}{jdaniel.asousa@gmail.com}}
+            \hbox{\includegraphics[width=14pt,align=c]{icons/github.png} \hspace{2pt} \url{https://github.com/TutoDS}}
+        }%
+    $%
+}
+\vspace{20pt}
+
+\input{topics/education}
+
+\includegraphics[width=\textwidth]{line.png}
+
+% \begin{minipage}[t]{0.3\textwidth}
+
+\input{topics/experience}
+
+\includegraphics[width=\textwidth]{line.png}
+
+\input{topics/skills}
+
+\includegraphics[width=\textwidth]{line.png}
+
+\input{topics/projects}
+
+\includegraphics[width=\textwidth]{line.png}
+
+\input{topics/hobbies}
+
+\end{document}

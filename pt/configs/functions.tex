@@ -1,0 +1,86 @@
+% ==> Command to add Image with Caption (w/ color option) <== %
+\newcommand\figureCColor[4]{%
+	\begin{center}
+		\captionsetup{type=figure,hypcap=true,labelfont={color=#4},font={color=#4}}
+		\includegraphics[width=#1\textwidth]{#2}
+		\caption{#3}
+	\end{center}
+}
+
+% ==> Command to add Image with Caption <== %
+\newcommand\figureFrame[3]{%
+\begin{center}
+	\captionsetup{type=figure,hypcap=true}
+	\includegraphics[width=#1\textwidth]{#2}
+	\caption{#3}
+\end{center}
+}
+
+% ==> Command to add PDF with Caption <== %
+\newcommand\pdfFrame[4]{%
+	\begin{center}
+		\captionsetup{type=figure,hypcap=true}
+		\includegraphics[page=#4,width=#1\textwidth, trim=1cm 2cm 0cm 3cm, clip]{#2}
+		\caption{#3}
+	\end{center}
+}
+
+% ==> Custom Paragraph <== %
+\newcommand{\paragraphBreak}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\paragraphBreakNoNum}[1]{\paragraph*{#1}\mbox{}\\}
+
+% ==> Indentation in Minipage <== %
+\newcommand{\minipagerestore}{
+	\setlength{\parindent}{20pt}
+	\setlength{\parskip}{0.75em}
+}
+
+% ==> Custom GLS Commands <== %
+\newcommand{\glsShortUnder}[1]{\underline{\gls{#1}}}
+\newcommand{\Glsunder}[1]{\underline{\Gls{#1}}}
+\newcommand{\glslinkUnder}[2]{\underline{\glslink{#1}{#2}}}
+\newcommand{\acrshortplUnder}[1]{\underline{\glsxtrshortpl{#1}}} % Plural Acronym
+
+% ==> Links <== %
+\newcommand{\hyperrefUnder}[2]{\underline{\hyperref[#1]{#2}}}
+
+
+\newcommand\formation[4]{%
+	\begin{minipage}[t]{0.25\textwidth}
+		#1~\textemdash~#2
+		\end{minipage}
+		\begin{minipage}[t]{0.75\textwidth}
+		#3
+
+		#4
+	\end{minipage}
+}
+
+\newcommand\formationOneYear[3]{%
+	\begin{minipage}[t]{0.25\textwidth}
+		#1
+		\end{minipage}
+		\begin{minipage}[t]{0.75\textwidth}
+		#2
+
+		#3
+	\end{minipage}
+}
+
+\newcommand\experience[5]{%
+	\begin{minipage}[t]{0.3\textwidth}
+		\textbf{#1}
+
+		#2
+
+		\end{minipage}
+		\begin{minipage}[t]{0.7\textwidth}
+		#3
+
+		\textbf{#4}
+
+
+		\vspace{10pt}
+		#5
+	\end{minipage}
+}

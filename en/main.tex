@@ -10,7 +10,7 @@
     $
         \rlap{$
             \vcenter{
-                \hbox{\textcolor{dark}{\vrule height 16ex width .7\textwidth}}
+                \hbox{\textcolor{primary}{\vrule height 16ex width .6\textwidth}}
             }$%
         }
         \hskip\dimexpr\paperwidth/2-\textwidth/2
@@ -20,35 +20,37 @@
             \hbox{\fontspec{Poppins-Bold.ttf}[Path=fonts/poppins/]\Huge\MakeUppercase{Daniel Sousa}}
             \hbox{\fontspec{Poppins-Light.ttf}[Path=fonts/poppins/]Front-end Developer}
         }%
-        \kern8em
-		\vcenter{%
-			\baselineskip=20pt
-%			\hbox{\includegraphics[width=14pt,align=c]{icons/phone.pdf} \hspace{2pt} \href{}{}}
-			\hbox{\includegraphics[width=14pt,align=c]{icons/email.pdf} \hspace{2pt} \href{mailto:jdaniel.asousa@gmail.com}{jdaniel.	asousa@gmail.com}}
-			\hbox{\includegraphics[width=14pt,align=c]{icons/github.pdf} \hspace{2pt} \url{https://github.com/TutoDS}}
-		}%
+        \kern4em
+        \vcenter{%
+            \baselineskip=20pt
+            \hbox{\includegraphics[width=14pt,align=c]{icons/social/email.pdf} \hspace{2pt} \href{mailto:jdaniel.asousa@gmail.com}{jdaniel.asousa@gmail.com}}
+            \hbox{\includegraphics[width=14pt,align=c]{icons/social/github.pdf} \hspace{2pt} \url{https://github.com/TutoDS}}
+            \hbox{\includegraphics[width=14pt,align=c]{icons/social/linkedin.pdf} \hspace{2pt} \url{http://linkedin.com/in/daniel-sousa-tutods/}}
+        }%
     $%
 }
 \vspace{20pt}
 
 \input{topics/education}
 
-\includegraphics[width=\textwidth]{line.pdf}
-
-% \begin{minipage}[t]{0.3\textwidth}
+\includegraphics[width=\textwidth]{separator.pdf}
 
 \input{topics/experience}
 
-\includegraphics[width=\textwidth]{line.pdf}
+\includegraphics[width=\textwidth]{separator.pdf}
 
 \input{topics/skills}
 
-\includegraphics[width=\textwidth]{line.pdf}
+\includegraphics[width=\textwidth]{separator.pdf}
 
 \input{topics/projects}
 
-\includegraphics[width=\textwidth]{line.pdf}
+% \includegraphics[width=\textwidth]{separator.pdf}
 
-\input{topics/hobbies}
+% \input{topics/hobbies}
+
+\includegraphics[width=\textwidth]{separator.pdf}
+
+\input{topics/other-education}
 
 \end{document}

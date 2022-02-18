@@ -67,6 +67,34 @@
 	\end{minipage}
 }
 
+\newcommand\certificateformation[5]{%
+	\begin{minipage}[t]{0.15\textwidth}
+		#1~\textemdash~#2
+		\end{minipage}
+		\begin{minipage}[t]{0.85\textwidth}
+		#3
+
+		#4
+
+		\vspace{2pt}
+		{\color{primary}\href{#5}{\color{primary}Certificado}}
+	\end{minipage}
+}
+
+\newcommand\certificateformationOneYear[4]{%
+	\begin{minipage}[t]{0.15\textwidth}
+		#1
+		\end{minipage}
+		\begin{minipage}[t]{0.85\textwidth}
+		#2
+
+		#3
+
+		\vspace{4pt}
+		{\footnotesize\href{#4}{\color{primary}Certificado}}
+	\end{minipage}
+}
+
 \newcommand\experience[5]{%
 	\begin{minipage}[t]{0.3\textwidth}
 		\textbf{#1}
@@ -84,3 +112,19 @@
 		#5
 	\end{minipage}
 }
+
+\newcommand\project[5]{%
+\textbf{\textit{#1}}\\
+{
+	\scriptsize
+	\fontspec{Poppins-Light.ttf}[Path=fonts/poppins/]
+	#2\\[2pt]
+	{\fontspec{Poppins-SemiBold.ttf}[Path=fonts/poppins/]\textbf{Tecnologias:}}
+	#3\\[2pt]
+	#4\\[2pt]
+	#5
+}
+}
+
+% ==> Skill Tag <== %
+\newcommand{\skilltag}[1]{\tikz[baseline]\node[anchor=base,draw=body!30, rounded corners, inner xsep=1.5ex, inner ysep=1.15ex, text height=1.5ex, text depth=.25ex]{#1};}
